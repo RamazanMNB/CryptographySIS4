@@ -3,6 +3,14 @@
 A complete Java simulation of the BB84 and E91 quantum cryptography protocols,
 built from scratch without any quantum computing libraries.
 
+## Team
+
+| Name |
+
+| Myngbay Ramazan | 
+| Atamuratov Nursultan | 
+
+
 ## Features
 
 - **BB84 Protocol** — all 4 phases (transmission, reconciliation, error check, privacy amplification)
@@ -12,7 +20,7 @@ built from scratch without any quantum computing libraries.
 - **Animated Visualization** (+4 bonus) — real-time photon transmission animation
 - **Step-by-Step Mode** — click through each photon one at a time
 - **Statistics Panel** — live charts and key metrics
-- **28 Tests** — full validation suite covering all requirements
+- **29 Tests** — full validation suite covering all requirements
 
 ## Requirements
 
@@ -32,7 +40,7 @@ java -cp out quantum.Main
 # Run tests
 java -cp out quantum.Main --test
 # or directly:
-java -cp out quantum.quantum.BB84Test
+java -cp out quantum.BB84Test
 ```
 
 ## Project Structure
@@ -46,7 +54,7 @@ src/main/java/quantum/
 ├── BB84Result.java          # Result data class with statistics
 ├── CascadeCorrection.java   # Cascade error correction (bonus)
 ├── E91Protocol.java         # E91 entanglement protocol (bonus)
-├── BB84Test.java            # 28 tests (run with --test flag)
+├── BB84Test.java            # 29 tests (run with --test flag)
 ├── Main.java                # Entry point
 └── ui/
     ├── MainWindow.java      # Main JFrame (BB84 tab, E91 tab)
@@ -77,17 +85,17 @@ src/main/java/quantum/
 
 ## Grading Coverage
 
-| Component              | Points | Status |
-|------------------------|--------|--------|
-| Quantum State Sim      | 20     | ✓      |
-| BB84 Protocol          | 25     | ✓      |
-| Eavesdropping Sim      | 15     | ✓      |
-| Statistical Analysis   | 10     | ✓      |
-| Visualization & UI     | 15     | ✓      |
-| Testing & Validation   | 8      | ✓ (28 tests) |
-| Technical Report       | 7      | (separate) |
-| **Total**              | **100** | ✓     |
-| E91 Protocol           | +5     | ✓      |
-| Cascade Correction     | +3     | ✓      |
-| Exceptional Animation  | +4     | ✓      |
-| **Bonus**              | **+10** | ✓    |
+| Component              | Points | Status       |
+|------------------------|--------|--------------|
+| Quantum State Sim      | 20     | ✓            |
+| BB84 Protocol          | 25     | ✓            |
+| Eavesdropping Sim      | 15     | ✓            |
+| Statistical Analysis   | 10     | ✓            |
+| Visualization & UI     | 15     | ✓            |
+| Testing & Validation   | 8      | ✓ (29 tests) |
+| Technical Report       | 7      | (separate)   |
+| **Total**              | **100**| ✓            |
+| E91 Protocol           | +5     | ✓            |
+| Cascade Correction     | +3     | ✓            |
+| Exceptional Animation  | +4     | ✓            |
+| **Bonus**              | **+10**| ✓            |
